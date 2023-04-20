@@ -53,8 +53,7 @@
 								required="true">
 						</div>
 						<div class="checkbox">
-							<label class="pull-left"><a href="index.jsp">Home
-									Page</a></label> <label class="pull-right"> <a href="forgot-password.jsp">Forgot Password?</a>
+							<label class="pull-left"><a href="index.jsp">Trang chủ</a></label> <label class="pull-right"> <a href="forgot-password.jsp">Forgot Password?</a>
 							</label>
 						</div>
 						<button type="submit" name="login"
