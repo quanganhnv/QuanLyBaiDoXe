@@ -47,7 +47,7 @@
 				<div class="col-sm-4">
 					<div class="page-header float-left">
 						<div class="page-title">
-							<h1>Dashboard</h1>
+							<h1>Trang chủ</h1>
 						</div>
 					</div>
 				</div>
@@ -55,9 +55,9 @@
 					<div class="page-header float-right">
 						<div class="page-title">
 							<ol class="breadcrumb text-right">
-								<li><a href="dashboard.jsp">Dashboard</a></li>
-								<li><a href="manage-category.jsp">Category</a></li>
-								<li class="active">Update Category</li>
+								<li><a href="dashboard.jsp">Trang chủ</a></li>
+								<li><a href="manage-category.jsp">Loại xe</a></li>
+								<li class="active">Chỉnh sửa loại xe</li>
 							</ol>
 						</div>
 					</div>
@@ -88,14 +88,13 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong>Update </strong> Category
+							Chỉnh sửa loại xe
 						</div>
 						<div class="card-body card-block">
 							<form action="edit-category-done.jsp" method="post">
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">Category
-											Name</label>
+										<label for="text-input" class=" form-control-label">Tên loại xe</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="text" id="catename" name="catename"
@@ -110,7 +109,7 @@
 
 								<p style="text-align: center;">
 									<button type="submit" class="btn btn-primary btn-sm"
-										name="submit">Update</button>
+										name="submit">Cập nhật</button>
 								</p>
 							</form>
 						</div>

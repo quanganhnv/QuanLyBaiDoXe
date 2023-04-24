@@ -37,7 +37,7 @@
 			<div class="login-content">
 				<div class="login-logo">
 					<a href="index.php">
-						<h4 style="color: #FFFFFF">Vehicle Parking Management System</h4>
+						<h4 style="color: #FFFFFF">Hệ thống quản lý bãi đỗ xe</h4>
 					</a>
 				</div>
 				<%
@@ -49,7 +49,7 @@
 				%>
 				<div class="login-form">
 					<div class="form-group">
-						<label>Your Password :</label>
+						<label>Mật khẩu của bạn :</label>
 						<lable><%=rs.getString(1)%></lable>
 					</div>
 				</div>
@@ -58,7 +58,7 @@
 				%>
 				<div class="login-form">
 					<div class="form-group">
-						<label>Sorry!! Your account is not present this system.</label>
+						<label>Xin lỗi, tài khoản của bạn không có trong hệ thống.</label>
 					</div>
 				</div>
 				<%

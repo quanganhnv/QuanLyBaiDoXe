@@ -48,7 +48,7 @@
 				<div class="col-sm-4">
 					<div class="page-header float-left">
 						<div class="page-title">
-							<h1>Dashboard</h1>
+							<h1>Trang chủ</h1>
 						</div>
 					</div>
 				</div>
@@ -56,9 +56,9 @@
 					<div class="page-header float-right">
 						<div class="page-title">
 							<ol class="breadcrumb text-right">
-								<li><a href="dashboard.jsp">Dashboard</a></li>
-								<li><a href="add-category.jsp">Category</a></li>
-								<li class="active">Parking Seats</li>
+								<li><a href="dashboard.jsp">Trang chủ</a></li>
+								<li><a href="add-category.jsp">Loại xe</a></li>
+								<li class="active">Chỗ đỗ xe</li>
 							</ol>
 						</div>
 					</div>
@@ -84,7 +84,7 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong>Parking </strong> Seats
+							Chỗ đỗ xe
 						</div>
 						<%
 						int parking_seat=0;
@@ -99,7 +99,7 @@
 							<form action="update-parking-seats.jsp" method="post">
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">Parking Seats
+										<label for="text-input" class=" form-control-label">Chỗ đỗ xe
 											</label>
 									</div>
 									<div class="col-12 col-md-9">
@@ -110,7 +110,7 @@
 								</div>
 								<p style="text-align: center;">
 									<button type="submit" class="btn btn-primary btn-sm"
-										name="submit">Update Parking Seats</button>
+										name="submit">Cập nhật</button>
 								</p>
 							</form>
 						</div>

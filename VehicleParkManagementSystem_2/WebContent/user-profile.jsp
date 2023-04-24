@@ -44,7 +44,7 @@
 				<div class="col-sm-4">
 					<div class="page-header float-left">
 						<div class="page-title">
-							<h1>Dashboard</h1>
+							<h1>Trang chủ</h1>
 						</div>
 					</div>
 				</div>
@@ -52,9 +52,9 @@
 					<div class="page-header float-right">
 						<div class="page-title">
 							<ol class="breadcrumb text-right">
-								<li><a href="user-dashboard.jsp">Dashboard</a></li>
-								<li><a href="user-profile.jsp">Profile</a></li>
-								<li class="active">User Profile</li>
+								<li><a href="user-dashboard.jsp">Trang chủ</a></li>
+								<li><a href="user-profile.jsp">Thông tin cá nhân</a></li>
+								<li class="active">Thông tin cá nhân</li>
 							</ol>
 						</div>
 					</div>
@@ -77,7 +77,7 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong>User </strong> Profile
+							Thông tin cá nhân
 						</div>
 						<div class="card-body card-block">
 							<form action="" method="post">
@@ -96,8 +96,7 @@
 								%>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">Full
-											Name</label>
+										<label for="text-input" class=" form-control-label">Tên</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input class=" form-control" id="adminname" name="adminname"
@@ -106,7 +105,7 @@
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="email-input" class=" form-control-label">Mobile</label>
+										<label for="email-input" class=" form-control-label">Số điện tho</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input class=" form-control" id="username" name="username"
@@ -115,7 +114,7 @@
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="password-input" class=" form-control-label">Email Id</label>
+										<label for="password-input" class=" form-control-label">Email</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input class="form-control " id="contactnumber"
@@ -125,7 +124,7 @@
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="disabled-input" class=" form-control-label">Address</label>
+										<label for="disabled-input" class=" form-control-label">Địa chỉ</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input class="form-control " id="email" name="email"
@@ -143,7 +142,7 @@
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="disabled-input" class=" form-control-label">Password</label>
+										<label for="disabled-input" class=" form-control-label">Mật khẩu</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input class="form-control " id="email" name="email"

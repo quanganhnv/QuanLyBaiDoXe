@@ -44,7 +44,7 @@
 				<div class="col-sm-4">
 					<div class="page-header float-left">
 						<div class="page-title">
-							<h1>Dashboard</h1>
+							<h1>Trang chủ</h1>
 						</div>
 					</div>
 				</div>
@@ -52,9 +52,9 @@
 					<div class="page-header float-right">
 						<div class="page-title">
 							<ol class="breadcrumb text-right">
-								<li><a href="dashboard.jsp">Dashboard</a></li>
-								<li><a href="admin-profile.jsp">Profile</a></li>
-								<li class="active">Admin Profile</li>
+								<li><a href="dashboard.jsp">Trang chủ</a></li>
+								<li><a href="admin-profile.jsp">Thông tin quản lý</a></li>
+								<li class="active">Thông tin quản lý</li>
 							</ol>
 						</div>
 					</div>
@@ -80,7 +80,7 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong>Admin </strong> Profile
+							Thông tin <strong>Quản lý</strong>
 						</div>
 						<p>
 							<%
@@ -90,7 +90,7 @@
 							%>
 						
 						<h6>
-							<center>Profile updated sucessfully.</center>
+							<center>Cập nhật thông tin quản lý thành công.</center>
 						</h6>
 						<%
 							}
@@ -115,8 +115,7 @@
 
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">Admin
-											Name</label>
+										<label for="text-input" class=" form-control-label">Tên quản lý</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input class=" form-control" id="adminname" name="adminname"
@@ -125,8 +124,7 @@
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="email-input" class=" form-control-label">User
-											Name</label>
+										<label for="email-input" class=" form-control-label">Tên tài khoản</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input class=" form-control" id="username" name="username"
@@ -135,8 +133,7 @@
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="password-input" class=" form-control-label">Contact
-											Number</label>
+										<label for="password-input" class=" form-control-label">Số điện thoại</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input class="form-control " id="contactnumber"
@@ -160,7 +157,7 @@
 								%>
 								<p style="text-align: center;">
 									<button type="submit" class="btn btn-primary btn-sm"
-										name="submit">Update</button>
+										name="submit">Cập nhật</button>
 								</p>
 							</form>
 						</div>

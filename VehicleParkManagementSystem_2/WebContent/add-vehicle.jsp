@@ -44,7 +44,7 @@
 				<div class="col-sm-4">
 					<div class="page-header float-left">
 						<div class="page-title">
-							<h1>Dashboard</h1>
+							<h1>Trang chủ</h1>
 						</div>
 					</div>
 				</div>
@@ -52,9 +52,9 @@
 					<div class="page-header float-right">
 						<div class="page-title">
 							<ol class="breadcrumb text-right">
-								<li><a href="dashboard.jsp">Dashboard</a></li>
-								<li><a href="add-vehicle.jsp">Vehicle</a></li>
-								<li class="active">Add Vehicle</li>
+								<li><a href="dashboard.jsp">Trang chủ</a></li>
+								<li><a href="add-vehicle.jsp">Phương tiện</a></li>
+								<li class="active">Thêm phương tiện</li>
 							</ol>
 						</div>
 					</div>
@@ -77,7 +77,7 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong>Add </strong> Vehicle
+							<strong>Thêm </strong> phương tiện
 						</div>
 						<p>
 							<%
@@ -87,7 +87,7 @@
 							%>
 						
 						<h6>
-							<center>Parking slot is full, Wait for sometimes.</center>
+							<center>Chỗ để xe đã đầy, vui lòng thử lại sau.</center>
 						</h6>
 						<%
 							}
@@ -98,11 +98,11 @@
 								<p style="font-size: 16px; color: red" align="center">
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="select" class=" form-control-label">Select</label>
+										<label for="select" class=" form-control-label">Loại xe</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<select name="catename" id="catename" class="form-control">
-											<option value="0">Select Category</option>
+											<option value="0">Chọn loại xe</option>
 											<%
 												Connection con = DatabaseConnection.getConnection();
 													Statement statement = con.createStatement();
@@ -118,51 +118,47 @@
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">Vehicle
-											Company</label>
+										<label for="text-input" class=" form-control-label">Nhãn hiệu xe</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="text" id="vehcomp" name="vehcomp"
-											class="form-control" placeholder="Vehicle Company"
+											class="form-control" placeholder="Nhãn hiệu xe"
 											required="true">
 									</div>
 								</div>
 
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">Registration
-											Number</label>
+										<label for="text-input" class=" form-control-label">Số đăng ký</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="text" id="vehreno" name="vehreno"
-											class="form-control" placeholder="Registration Number"
+											class="form-control" placeholder="Số đăng ký"
 											required="true">
 									</div>
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">Owner
-											Name</label>
+										<label for="text-input" class=" form-control-label">Tên chủ xe</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="text" id="ownername" name="ownername"
-											class="form-control" placeholder="Owner Name" required="true">
+											class="form-control" placeholder="Tên chủ xe" required="true">
 									</div>
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">Owner
-											Contact Number</label>
+										<label for="text-input" class=" form-control-label">Số điên thoại chủ xe</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="text" id="ownercontno" name="ownercontno"
-											class="form-control" placeholder="Owner Contact Number"
+											class="form-control" placeholder="Số điên thoại chủ xe"
 											required="true" maxlength="10" pattern="[0-9]+">
 									</div>
 								</div>
 								<p style="text-align: center;">
 									<button type="submit" class="btn btn-primary btn-sm"
-										name="submit">Add</button>
+										name="submit">Thêm</button>
 								</p>
 							</form>
 						</div>

@@ -48,7 +48,7 @@
 				<div class="col-sm-4">
 					<div class="page-header float-left">
 						<div class="page-title">
-							<h1>Dashboard</h1>
+							<h1>Trang chủ</h1>
 						</div>
 					</div>
 				</div>
@@ -56,8 +56,8 @@
 					<div class="page-header float-right">
 						<div class="page-title">
 							<ol class="breadcrumb text-right">
-								<li><a href="dashboard.jsp">Dashboard</a></li>
-								<li class="active">User Membership</li>
+								<li><a href="dashboard.jsp">Trang chủ</a></li>
+								<li class="active">Thành viên</li>
 							</ol>
 						</div>
 					</div>
@@ -75,17 +75,17 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong class="card-title">Users Membership</strong>
+							<strong class="card-title">Thành viên</strong>
 						</div>
 						<div class="card-body">
 							<table class="table">
 								<thead>
 									<tr>
-										<th>S.NO</th>
-										<th>Full Name</th>
-										<th>Mobile</th>
+										<th>STT</th>
+										<th>Tên</th>
+										<th>Số điện thoại</th>
 										<th>Email</th>
-										<th>Address</th>
+										<th>Địa chỉ</th>
 									</tr>
 								</thead>
 								<%

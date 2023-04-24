@@ -123,7 +123,7 @@
 											<span class="count"> <%=count%>
 											</span>
 										</div>
-										<div class="stat-heading">Total Booking</div>
+										<div class="stat-heading">Tổng số lần đặt chỗ</div>
 									</div>
 								</div>
 							</div>
@@ -151,7 +151,7 @@
 											<span class="count"> <%=slot_capacity%>
 											</span>
 										</div>
-										<div class="stat-heading">Total Parking Slot Capacity</div>
+										<div class="stat-heading">Tổng số chỗ đỗ xe</div>
 									</div>
 								</div>
 							</div>

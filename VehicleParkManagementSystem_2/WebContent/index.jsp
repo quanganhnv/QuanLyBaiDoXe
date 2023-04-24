@@ -18,13 +18,10 @@
 </head>
 <body style="background-image: url(images/VehicleParkingLogo.gif); background-size: 1150px;">
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-		<a class="navbar-brand" href="index.jsp">Vehicle Parking
-			Management System</a>
+		<a class="navbar-brand" href="index.jsp">Hệ thống quản lý bãi đỗ xe</a>
 		<ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link" href="user-login.jsp">User
-					Login</a></li>
-			<li class="nav-item"><a class="nav-link" href="admin-login.jsp">Admin
-					Login</a></li>
+			<li class="nav-item"><a class="nav-link" href="user-login.jsp">Người dùng đăng nhập</a></li>
+			<li class="nav-item"><a class="nav-link" href="admin-login.jsp">Quản lý đăng nhập</a></li>
 		</ul>
 	</nav>
 </body>

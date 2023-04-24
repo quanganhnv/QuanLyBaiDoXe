@@ -48,7 +48,7 @@
 				<div class="col-sm-4">
 					<div class="page-header float-left">
 						<div class="page-title">
-							<h1>Dashboard</h1>
+							<h1>Trang chủ</h1>
 						</div>
 					</div>
 				</div>
@@ -56,9 +56,9 @@
 					<div class="page-header float-right">
 						<div class="page-title">
 							<ol class="breadcrumb text-right">
-								<li><a href="user-dashboard.jsp">Dashboard</a></li>
-								<li><a href="manage-incomingvehicle.jsp">Manage Vehicle</a></li>
-								<li class="active">Manage Incoming Vehicle</li>
+								<li><a href="user-dashboard.jsp">Trang chủ</a></li>
+								<li><a href="manage-incomingvehicle.jsp">Quản lý phương tiện</a></li>
+								<li class="active">Quản lý phương tiện đến</li>
 							</ol>
 						</div>
 					</div>
@@ -76,17 +76,17 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong class="card-title">Manage Incoming Vehicle</strong>
+							<strong class="card-title">Quản lý phương tiện đến</strong>
 						</div>
 						<div class="card-body">
 							<table class="table">
 								<thead>
 									<tr>
-										<th>S.NO</th>
-										<th>Parking Number</th>
-										<th>Owner Name</th>
-										<th>Vehicle Reg Number</th>
-										<th>Action</th>
+										<th>STT</th>
+										<th>Số bãi đỗ xe</th>
+										<th>Tên chủ xe</th>
+										<th>Số đăng ký xe</th>
+										<th>Hành động</th>
 									</tr>
 								</thead>
 								<%
@@ -102,9 +102,9 @@
 									<td><%=resultset.getString(6)%></td>
 									<td><%=resultset.getString(5)%></td>
 									<td><a
-										href="view-user-incomingview-details.jsp?viewid=<%=resultset.getInt(1)%>&parkingNo=<%=resultset.getString(2)%>">View</a>
+										href="view-user-incomingview-details.jsp?viewid=<%=resultset.getInt(1)%>&parkingNo=<%=resultset.getString(2)%>">Xem chi tiết</a>
 										| <a href="print.jsp?vid=<%=resultset.getInt(1)%>"
-										style="cursor: pointer" target="_blank">Print</a></td>
+										style="cursor: pointer" target="_blank">In</a></td>
 								</tr>
 								<%
 									}

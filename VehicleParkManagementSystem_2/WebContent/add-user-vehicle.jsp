@@ -116,53 +116,49 @@
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">Vehicle
-											Company</label>
+										<label for="text-input" class=" form-control-label">Nhãn hiệu xe</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="text" id="vehcomp" name="vehcomp"
-											class="form-control" placeholder="Vehicle Company"
+											class="form-control" placeholder="Nhãn hiệu xe"
 											required="true">
 									</div>
 								</div>
 
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">Registration
-											Number</label>
+										<label for="text-input" class=" form-control-label">Số đăng ký</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="text" id="vehreno" name="vehreno"
-											class="form-control" placeholder="Registration Number"
+											class="form-control" placeholder="Số đăng ký"
 											required="true">
 									</div>
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">Owner
-											Name</label>
+										<label for="text-input" class=" form-control-label">Tên chủ xe</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="text" id="ownername" name="ownername"
-											class="form-control" placeholder="Owner Name"
+											class="form-control" placeholder="Tên chủ xe"
 											value="<%=session.getAttribute("fullName")%>" required="true"
 											readonly>
 									</div>
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">Owner
-											Contact Number</label>
+										<label for="text-input" class=" form-control-label">Số điện thoại chủ xe</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="text" id="ownercontno" name="ownercontno"
-											class="form-control" placeholder="Owner Contact Number"
+											class="form-control" placeholder="Số điện thoại chủ xe"
 											required="true" maxlength="10" value="<%=session.getAttribute("mobileNo")%>" readonly>
 									</div>
 								</div>
 								<p style="text-align: center;">
 									<button type="submit" class="btn btn-primary btn-sm"
-										name="submit">Add</button>
+										name="submit">Thêm</button>
 								</p>
 							</form>
 						</div>

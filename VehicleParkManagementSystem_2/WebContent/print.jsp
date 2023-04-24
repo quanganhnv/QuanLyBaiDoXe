@@ -39,52 +39,52 @@
 			<table border="2" cellspacing="2" cellpadding="2" width="80%">
 				<tr>
 					<th colspan="4" style="text-align: center; font-size: 22px;">
-						Vehicle Parking Receipt</th>
+						Biên nhận</th>
 				</tr>
 				<tr>
-					<th>Parking Number</th>
+					<th>Số bãi đỗ xe</th>
 					<td><%=resultset.getString(2)%></td>
-					<th>Vehicle Category</th>
+					<th>Loại xe</th>
 					<td><%=resultset.getString(3)%></td>
 				</tr>
 				<tr>
-					<th>Vehicle Company Name</th>
+					<th>Tên loại xe</th>
 					<td><%=resultset.getString(4)%></td>
 
-					<th>Registration Number</th>
+					<th>Số đăng ký</th>
 					<td><%=resultset.getString(5)%></td>
 				</tr>
 				<tr>
-					<th>Owner Name</th>
+					<th>Tên chủ xe</th>
 					<td><%=resultset.getString(6)%></td>
 
-					<th>Owner Contact Number</th>
+					<th>Số điện thoại chủ xe</th>
 					<td><%=resultset.getString(7)%></td>
 				</tr>
 				<tr>
-					<th>In Time</th>
+					<th>Thời gian vào</th>
 					<td><%=resultset.getString(8)%></td>
-					<th>Status</th>
+					<th>Trạng thái</th>
 					<td>
 						<%
 							if (resultset.getString(12).equals("")) {
-						%> Incoming Vehicle <%
+						%> Xe đến <%
 							}
 						%> <%
  	if (resultset.getString(12).equals("Out")) {
- %> Outgoing Vehicle<%
+ %> Xe ra<%
  	}
  %>
 					</td>
 				</tr>
 				<tr>
-					<th>Out time</th>
+					<th>Thời gian ra</th>
 					<td><%=resultset.getString(9)%></td>
-					<th>Parking Charge</th>
+					<th>Phí đỗ xe</th>
 					<td><%=resultset.getString(10)%></td>
 				</tr>
 				<tr>
-					<th>Remark</th>
+					<th>Nhận xét</th>
 					<td colspan="3"><%=resultset.getString(11)%></td>
 
 				</tr>

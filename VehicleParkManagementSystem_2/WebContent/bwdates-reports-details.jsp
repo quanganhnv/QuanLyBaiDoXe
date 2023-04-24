@@ -48,7 +48,7 @@
 				<div class="col-sm-4">
 					<div class="page-header float-left">
 						<div class="page-title">
-							<h1>Dashboard</h1>
+							<h1>Trang chủ</h1>
 						</div>
 					</div>
 				</div>
@@ -56,10 +56,9 @@
 					<div class="page-header float-right">
 						<div class="page-title">
 							<ol class="breadcrumb text-right">
-								<li><a href="dashboard.jsp">Dashboard</a></li>
-								<li><a href="bwdates-report-ds.jsp">Between Date
-										Reports</a></li>
-								<li class="active">Between Date Reports</li>
+								<li><a href="dashboard.jsp">Trang chủ</a></li>
+								<li><a href="bwdates-report-ds.jsp">Báo cáo theo ngày</a></li>
+								<li class="active">Báo cáo theo ngày</li>
 							</ol>
 						</div>
 					</div>
@@ -74,7 +73,7 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong class="card-title">Between Date Reports</strong>
+							<strong class="card-title">Báo cáo theo ngày</strong>
 						</div>
 						<div class="card-body">
 							<%
@@ -92,11 +91,11 @@
 								<thead>
 									<tr>
 									<tr>
-										<th>S.NO</th>
-										<th>Parking Number</th>
-										<th>Owner Name</th>
-										<th>Vehicle Reg Number</th>
-										<th>Action</th>
+										<th>STT</th>
+										<th>Số bãi đỗ xe</th>
+										<th>Tên chủ xe</th>
+										<th>Số đăng ký xe</th>
+										<th>Hành động</th>
 									</tr>
 									</tr>
 								</thead>
@@ -114,7 +113,7 @@
 									<td><%=resultset.getString(6)%></td>
 									<td><%=resultset.getString(5)%></td>
 									<td><a
-										href="view-incomingvehicle-detail.jsp?viewid=<%=resultset.getInt(1)%>">View</a></td>
+										href="view-incomingvehicle-detail.jsp?viewid=<%=resultset.getInt(1)%>">Xem</a></td>
 								</tr>
 								<%
 									}

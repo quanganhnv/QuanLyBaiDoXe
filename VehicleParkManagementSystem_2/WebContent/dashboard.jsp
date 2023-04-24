@@ -123,7 +123,7 @@
 										<div class="stat-text">
 											<span class="count"><%=count_today_vehentries%> </span>
 										</div>
-										<div class="stat-heading">Todays Vehicle Entries</div>
+										<div class="stat-heading">Nhập xe hôm nay</div>
 									</div>
 								</div>
 							</div>
@@ -152,7 +152,7 @@
 											<span class="count"> <%=count_yesterday_vehentries%>
 											</span>
 										</div>
-										<div class="stat-heading">Yesterdays Vehicle Entries</div>
+										<div class="stat-heading">Nhập xe hôm qua</div>
 									</div>
 								</div>
 							</div>
@@ -182,7 +182,7 @@
 											<span class="count"> <%=count_lastsevendays_vehentries%>
 											</span>
 										</div>
-										<div class="stat-heading">Last 7 days Vehicle Entries</div>
+										<div class="stat-heading">Nhập xe 7 ngày vừa qua</div>
 									</div>
 								</div>
 							</div>
@@ -212,7 +212,7 @@
 											<span class="count"> <%=count_total_vehentries%>
 											</span>
 										</div>
-										<div class="stat-heading">Total Vehicle Entries</div>
+										<div class="stat-heading">Tổng số xe</div>
 									</div>
 								</div>
 							</div>
@@ -243,7 +243,7 @@
 											<span class="count"> <%=booking_seats%>
 											</span>
 										</div>
-										<div class="stat-heading">Total Bookings</div>
+										<div class="stat-heading">Tổng lượt đặt trước</div>
 									</div>
 								</div>
 							</div>
@@ -271,7 +271,7 @@
 											<span class="count"> <%=ParingSeatCapactiy%>
 											</span>
 										</div>
-										<div class="stat-heading">Parking Seats Capacity</div>
+										<div class="stat-heading">Sức chứa chỗ đỗ xe</div>
 									</div>
 								</div>
 							</div>

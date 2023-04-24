@@ -33,7 +33,7 @@
 <script type="text/javascript">
 	function checkpass() {
 		if (document.changepassword.newpassword.value != document.changepassword.confirmpassword.value) {
-			alert('New Password and Confirm Password field does not match');
+			alert('Mật khẩu và xác nhận mật khẩu không khớp');
 			document.changepassword.confirmpassword.focus();
 			return false;
 		}
@@ -56,7 +56,7 @@
 				<div class="col-sm-4">
 					<div class="page-header float-left">
 						<div class="page-title">
-							<h1>Dashboard</h1>
+							<h1>Trang chủ</h1>
 						</div>
 					</div>
 				</div>
@@ -65,8 +65,8 @@
 						<div class="page-title">
 							<ol class="breadcrumb text-right">
 								<li><a href="dashboard.jsp">Dashboard</a></li>
-								<li><a href="change-password.jsp">Change Password</a></li>
-								<li class="active">Change Password</li>
+								<li><a href="change-password.jsp">Đổi mật khẩu</a></li>
+								<li class="active">Đổi mật khẩu</li>
 							</ol>
 						</div>
 					</div>
@@ -92,7 +92,7 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong>Change </strong> Password
+							Đổi mật khẩu
 						</div>
 						<div class="card-body card-block">
 							<form action="AdminPasswordChange" method="post">
@@ -108,8 +108,7 @@
 								<p style="font-size: 16px; color: red" align="center">
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">Current
-											Password</label>
+										<label for="text-input" class=" form-control-label">Mật khẩu hiện tại</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="text" name="cpassword" class=" form-control"
@@ -118,8 +117,7 @@
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="email-input" class=" form-control-label">New
-											Password</label>
+										<label for="email-input" class=" form-control-label">Mật khẩu mới</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="password" name="password" class="form-control"
@@ -128,8 +126,7 @@
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="password-input" class=" form-control-label">Confirm
-											Password</label>
+										<label for="password-input" class=" form-control-label">Xác nhận mật khẩu</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="password" name="confpass" class="form-control"
@@ -138,7 +135,7 @@
 								</div>
 								<p style="text-align: center;">
 									<button type="submit" class="btn btn-primary btn-sm"
-										name="submit">Change</button>
+										name="submit">Cập nhật</button>
 								</p>
 							</form>
 						</div>

@@ -37,27 +37,27 @@
 			<div class="login-content">
 				<div class="login-logo">
 					<a href="index.php">
-						<h4 style="color: #FFFFFF">Vehicle Parking Management System</h4>
+						<h4 style="color: #FFFFFF">Hệ thống quản lý bãi đỗ xe</h4>
 					</a>
 				</div>
 				<div class="login-form">
 					<form action="AdminLogin" method="post">
 						<p style="font-size: 16px; color: red" align="center"></p>
 						<div class="form-group">
-							<label>User Name</label> <input class="form-control" type="text"
-								placeholder="Username" required="true" name="username">
+							<label>Tên đăng nhập</label> <input class="form-control" type="text"
+								placeholder="Tên đăng nhập" required="true" name="username">
 						</div>
 						<div class="form-group">
-							<label>Password</label> <input type="password"
-								class="form-control" name="password" placeholder="Password"
+							<label>Mật khẩu</label> <input type="password"
+								class="form-control" name="password" placeholder="Mật khẩu"
 								required="true">
 						</div>
 						<div class="checkbox">
-							<label class="pull-left"><a href="index.jsp">Trang chủ</a></label> <label class="pull-right"> <a href="forgot-password.jsp">Forgot Password?</a>
+							<label class="pull-left"><a href="index.jsp">Trang chủ</a></label> <label class="pull-right"> <a href="forgot-password.jsp">Quên mật khẩu?</a>
 							</label>
 						</div>
 						<button type="submit" name="login"
-							class="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button>
+							class="btn btn-success btn-flat m-b-30 m-t-30">Đăng nhập</button>
 					</form>
 				</div>
 			</div>

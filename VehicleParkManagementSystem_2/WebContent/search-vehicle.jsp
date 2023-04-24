@@ -47,7 +47,7 @@
 				<div class="col-sm-4">
 					<div class="page-header float-left">
 						<div class="page-title">
-							<h1>Dashboard</h1>
+							<h1>Trang chủ</h1>
 						</div>
 					</div>
 				</div>
@@ -55,9 +55,9 @@
 					<div class="page-header float-right">
 						<div class="page-title">
 							<ol class="breadcrumb text-right">
-								<li><a href="dashboard.jsp">Dashboard</a></li>
-								<li><a href="search-vehicle.jsp">Search Vehicle</a></li>
-								<li class="active">Search Vehicle</li>
+								<li><a href="dashboard.jsp">Trang chủ</a></li>
+								<li><a href="search-vehicle.jsp">Tìm kiếm xe</a></li>
+								<li class="active">Tìm kiếm xe</li>
 							</ol>
 						</div>
 					</div>
@@ -75,14 +75,13 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong class="card-title">Search Vehicle</strong>
+							<strong class="card-title">Tìm kiếm xe</strong>
 						</div>
 						<div class="card-body">
 							<form action="search-vehicle.jsp" method="post">
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">Search
-											By Parking Number</label>
+										<label for="text-input" class=" form-control-label">Tìm theo sỗ bãi đỗ xe</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="text" id="searchdata" name="searchdata"
@@ -92,17 +91,17 @@
 								</div>
 								<p style="text-align: center;">
 									<button type="submit" class="btn btn-primary btn-sm"
-										name="search">Search</button>
+										name="search">Tìm</button>
 								</p>
 							</form>
 							<table class="table">
 								<thead>
 									<tr>
-										<th>S.NO</th>
-										<th>Parking Number</th>
-										<th>Owner Name</th>
-										<th>Vehicle Reg. Number</th>
-										<th>Action</th>
+										<th>STT</th>
+										<th>Số bãi đỗ xe</th>
+										<th>Tên chủ xe</th>
+										<th>Số đăng ký xe</th>
+										<th>Hành động</th>
 									</tr>
 								</thead>
 								<%
@@ -128,11 +127,11 @@
 									</td>
 
 									<td><a
-										href="view-incomingvehicle-detail.jsp?viewid=<%=resultset.getInt(1)%>">View</a></td>
+										href="view-incomingvehicle-detail.jsp?viewid=<%=resultset.getInt(1)%>">Xem</a></td>
 								</tr>
 
 								<tr>
-									<td colspan="8">No record found against this search</td>
+									<td colspan="8">Không tìm thấy thông tin</td>
 
 								</tr>
 

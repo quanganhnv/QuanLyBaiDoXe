@@ -39,22 +39,22 @@
 			<div class="login-content">
 				<div class="login-logo">
 					<a href="index.jsp">
-						<h4 style="color: #FFFFFF">Vehicle Parking Management System</h4>
+						<h4 style="color: #FFFFFF">Hệ thống quản lý bãi đỗ xe</h4>
 					</a>
 				</div>
 				<div class="login-form">
 					<form action="reset-password.jsp" method="post">
 						<div class="form-group">
-							<label>Mobile Number</label> <input type="text"
+							<label>Số điện thoại</label> <input type="text"
 								class="form-control" name="contactno"
 								placeholder="Mobile Number" required="true">
 						</div>
 						<div class="checkbox">
-							<label class="pull-right"> <a href="index.jsp">Signin</a>
+							<label class="pull-right"> <a href="index.jsp">Đăng nhập</a>
 							</label>
 						</div>
 						<button type="submit" name="submit"
-							class="btn btn-success btn-flat m-b-30 m-t-30">Find Password</button>
+							class="btn btn-success btn-flat m-b-30 m-t-30">Quên mật khẩu</button>
 					</form>
 				</div>
 			</div>

@@ -48,7 +48,7 @@
 				<div class="col-sm-4">
 					<div class="page-header float-left">
 						<div class="page-title">
-							<h1>Dashboard</h1>
+							<h1>Trang chủ</h1>
 						</div>
 					</div>
 				</div>
@@ -56,9 +56,9 @@
 					<div class="page-header float-right">
 						<div class="page-title">
 							<ol class="breadcrumb text-right">
-								<li><a href="dashboard.jsp">Dashboard</a></li>
-								<li><a href="manage-incomingvehicle.jsp">View Vehicle</a></li>
-								<li class="active">Incoming Vehicle</li>
+								<li><a href="dashboard.jsp">Trang chủ</a></li>
+								<li><a href="manage-incomingvehicle.jsp">Chi tiết phương tiện</a></li>
+								<li class="active">Phương tiện vào bãi</li>
 							</ol>
 						</div>
 					</div>
@@ -76,7 +76,7 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong class="card-title">View Incoming Vehicle</strong>
+							<strong class="card-title">Chi tiết phương tiện vào bãi</strong>
 						</div>
 						<form action="ViewIncomingVehicleDetails" method="post">
 						<div class="card-body">
@@ -92,35 +92,35 @@
 							<table border="1" class="table table-bordered mg-b-0">
 
 								<tr>
-									<th>Parking Number</th>
+									<th>Số bãi đỗ xe/th>
 									<td><%=resultset.getString(2)%></td>
 								</tr>
 								<tr>
-									<th>Vehicle Category</th>
+									<th>Loại xe</th>
 									<td><input type="text" name="category" value="<%=resultset.getString(3)%>" style="border:none"></td>
 								</tr>
 								<tr>
-									<th>Vehicle Company Name</th>
+									<th>Tên thương hiệu</th>
 									<td><%=resultset.getString(4)%></td>
 								</tr>
 								<tr>
-									<th>Registration Number</th>
+									<th>Số đăng ký</th>
 									<td><%=resultset.getString(5)%></td>
 								</tr>
 								<tr>
-									<th>Owner Name</th>
+									<th>Tên chủ xe</th>
 									<td><%=resultset.getString(6)%></td>
 								</tr>
 								<tr>
-									<th>Owner Contact Number</th>
+									<th>Số điện thoại chủ xe</th>
 									<td><%=resultset.getString(7)%></td>
 								</tr>
 								<tr>
-									<th>In Time</th>
+									<th>Thời gian vào</th>
 									<td><input type="text" name="intime" value="<%=resultset.getString(8)%>" style="border:none"></td>
 								</tr>
 								<tr>
-									<th>Out Time</th>
+									<th>Thời gian ra</th>
 									<%
 										if (resultset.getString(12).equals("")) {
 
@@ -132,14 +132,14 @@
 									%>
 								</tr>
 								<tr>
-									<th>Status</th>
+									<th>Trạng thái</th>
 									<td>
 										<%
 											if (resultset.getString(12).equals("")) {
-										%>Vehicle In<%
+										%>Phương tiện vào<%
 											}
 													if (resultset.getString(12).equals("Out")) {
-										%>Vehicle Out<%
+										%>Phương tiện ra<%
 											}
 										%>
 									</td>
@@ -156,22 +156,22 @@
 						%>
 						
 							<tr>
-								<th>Remark :</th>
+								<th>Nhận xét :</th>
 								<td><textarea name="remark" placeholder="" rows="12"
 										cols="14" class="form-control" required="true"></textarea></td>
 							</tr>
 							<tr>
-								<th>Status :</th>
+								<th>Trạng thái :</th>
 								<td><select name="status" class="form-control"
 									required="true">
-										<option value="Out">Outgoing Vehicle</option>
+										<option value="Out">Xe ra</option>
 								</select></td>
 							</tr>
 							<tr>
 								<p style="text-align: center;">
 								<td>
 									<button type="submit" class="btn btn-primary btn-sm"
-										name="submit">Update</button>
+										name="submit">Cập nhật</button>
 									</p>
 								</td>
 							</tr>
@@ -182,12 +182,12 @@
 					%>
 					<table border="1" class="table table-bordered mg-b-0">
 						<tr>
-							<th>Remark</th>
+							<th>Nhận xét</th>
 							<td><%=resultset.getString(11)%></td>
 						</tr>
 						<tr>
 						<tr>
-							<th>Parking Fee</th>
+							<th>Phí gửi xe</th>
 							<td><%=resultset.getString(10)%></td>
 						</tr>
 

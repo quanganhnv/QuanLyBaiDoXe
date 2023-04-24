@@ -49,7 +49,7 @@
 				<div class="col-sm-4">
 					<div class="page-header float-left">
 						<div class="page-title">
-							<h1>Dashboard</h1>
+							<h1>Trang chủ</h1>
 						</div>
 					</div>
 				</div>
@@ -57,9 +57,9 @@
 					<div class="page-header float-right">
 						<div class="page-title">
 							<ol class="breadcrumb text-right">
-								<li><a href="dashboard.jsp">Dashboard</a></li>
-								<li><a href="manage-category.jsp">Category</a></li>
-								<li class="active">Manage Category</li>
+								<li><a href="dashboard.jsp">Trang chủ</a></li>
+								<li><a href="manage-category.jsp">Loại xe</a></li>
+								<li class="active">Quản lý loại xe</li>
 							</ol>
 						</div>
 					</div>
@@ -74,15 +74,15 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong class="card-title">Manage Category</strong>
+							<strong class="card-title">Quản lý loại xe</strong>
 						</div>
 						<div class="card-body">
 							<table class="table">
 								<thead>
 									<tr>
-										<th>S.NO</th>
-										<th>Category</th>
-										<th>Action</th>
+										<th>STT</th>
+										<th>Loại xe</th>
+										<th>Hành động</th>
 									</tr>
 								</thead>
 								<%
@@ -98,8 +98,7 @@
 									<td><%=resultset.getString(2)%></td>
 
 									<td><a
-										href="edit-category.jsp?editid=<%=resultset.getInt(1)%>">Edit
-											Details</a></td>
+										href="edit-category.jsp?editid=<%=resultset.getInt(1)%>">Cập nhật chi tiết</a></td>
 								</tr>
 								<%
 									}

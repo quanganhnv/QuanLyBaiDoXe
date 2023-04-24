@@ -43,7 +43,7 @@
 				<div class="col-sm-4">
 					<div class="page-header float-left">
 						<div class="page-title">
-							<h1>Dashboard</h1>
+							<h1>Trang chủ</h1>
 						</div>
 					</div>
 				</div>
@@ -51,9 +51,9 @@
 					<div class="page-header float-right">
 						<div class="page-title">
 							<ol class="breadcrumb text-right">
-								<li><a href="dashboard.jsp">Dashboard</a></li>
-								<li><a href="bwdates-report-ds.jsp">Reports</a></li>
-								<li class="active">Between Dates Reports</li>
+								<li><a href="dashboard.jsp">Trang chủ</a></li>
+								<li><a href="bwdates-report-ds.jsp">Báo cáo</a></li>
+								<li class="active">Báo cáo theo ngày</li>
 							</ol>
 						</div>
 					</div>
@@ -75,15 +75,14 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong>Between Dates </strong> Reports
+							Báo cáo theo ngày
 						</div>
 						<div class="card-body card-block">
 							<form action="bwdates-reports-details.jsp" method="post">
 								<p style="font-size: 16px; color: red" align="center">
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">From
-											Date</label>
+										<label for="text-input" class=" form-control-label">Từ ngày</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="date" name="fromdate" id="fromdate"
@@ -92,8 +91,7 @@
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="email-input" class=" form-control-label">To
-											Date</label>
+										<label for="email-input" class=" form-control-label">Đến ngày</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="date" name="todate" class="form-control"
@@ -102,7 +100,7 @@
 								</div>
 								<p style="text-align: center;">
 									<button type="submit" class="btn btn-primary btn-sm"
-										name="submit">Submit</button>
+										name="submit">Tìm</button>
 								</p>
 							</form>
 						</div>

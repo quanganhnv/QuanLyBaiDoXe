@@ -44,7 +44,7 @@
 				<div class="col-sm-4">
 					<div class="page-header float-left">
 						<div class="page-title">
-							<h1>Dashboard</h1>
+							<h1>Trang chủ</h1>
 						</div>
 					</div>
 				</div>
@@ -52,9 +52,9 @@
 					<div class="page-header float-right">
 						<div class="page-title">
 							<ol class="breadcrumb text-right">
-								<li><a href="dashboard.jsp">Dashboard</a></li>
-								<li><a href="manage-outgoingvehicle.jsp">Manage Vehicle</a></li>
-								<li class="active">Manage Outgoing Vehicle</li>
+								<li><a href="dashboard.jsp">Trang chủ</a></li>
+								<li><a href="manage-outgoingvehicle.jsp">Quản lý xe</a></li>
+								<li class="active">Quản lý xe ra</li>
 							</ol>
 						</div>
 					</div>
@@ -69,18 +69,18 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong class="card-title">Manage Outgoing Vehicle</strong>
+							<strong class="card-title">Quản lý xe ra</strong>
 						</div>
 						<div class="card-body">
 							<table class="table">
 								<thead>
 									<tr>
 									<tr>
-										<th>S.NO</th>
-										<th>Parking Number</th>
-										<th>Owner Name</th>
-										<th>Vehicle Reg Number</th>
-										<th>Action</th>
+										<th>STT</th>
+										<th>Số bãi đỗ xe</th>
+										<th>Tên chủ xe</th>
+										<th>Số đăng ký xe</th>
+										<th>Hành động</th>
 									</tr>
 									</tr>
 								</thead>
@@ -96,9 +96,9 @@
 									<td><%=resultset.getString(6)%></td>
 									<td><%=resultset.getString(5)%></td>
 									<td><a
-										href="view-outgoingvehicle-detail.jsp?viewid=<%=resultset.getInt(1)%>">View</a>
+										href="view-outgoingvehicle-detail.jsp?viewid=<%=resultset.getInt(1)%>">Xem</a>
 										| <a href="print.jsp?vid=<%=resultset.getInt(1)%>"
-										style="cursor: pointer" target="_blank">Print</a></td>
+										style="cursor: pointer" target="_blank">In</a></td>
 								</tr>
 								<%
 									}
