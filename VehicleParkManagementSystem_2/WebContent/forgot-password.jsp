@@ -50,7 +50,7 @@
 								placeholder="Mobile Number" required="true">
 						</div>
 						<div class="checkbox">
-							<label class="pull-right"> <a href="index.jsp">Signin</a>
+							<label class="pull-right"> <a href="index.jsp">SIGN IN</a>
 							</label>
 						</div>
 						<button type="submit" name="submit"

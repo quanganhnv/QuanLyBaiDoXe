@@ -42,7 +42,20 @@
 				</div>
 				<div class="login-form">
 					<form action="AdminLogin" method="post">
-						<p style="font-size: 16px; color: red" align="center"></p>
+						<p style="font-size: 16px; color: red" align="center">
+						<%
+							String message = (String) session.getAttribute("message");
+							if (message != null) {
+								session.removeAttribute("message");
+						%>
+					
+					<h6>
+						<center>Invalid username or password!!!</center>
+					</h6>
+					<%
+						}
+					%>
+						</p>
 						<div class="form-group">
 							<label>User Name</label> <input class="form-control" type="text"
 								placeholder="Username" required="true" name="username">
@@ -53,7 +66,7 @@
 								required="true">
 						</div>
 						<div class="checkbox">
-							<label class="pull-left"><a href="index.jsp">Trang chủ</a></label> <label class="pull-right"> <a href="forgot-password.jsp">Forgot Password?</a>
+							<label class="pull-left"><a href="index.jsp">HOME PAGE</a></label> <label class="pull-right"> <a href="forgot-password.jsp">FORGOT PASSWORD?</a>
 							</label>
 						</div>
 						<button type="submit" name="login"

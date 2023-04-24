@@ -49,7 +49,7 @@
 						%>
 					
 					<h6>
-						<center>Invalid credential, try again.</center>
+						<center>Invalid username or password!!!</center>
 					</h6>
 					<%
 						}
