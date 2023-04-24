@@ -37,7 +37,7 @@ public class UserLogin extends HttpServlet {
 				hs.setAttribute("mobileNo", resultset.getString(3));
 				response.sendRedirect("user-dashboard.jsp?_tokens='" + tokens + "'");
 			} else {
-				String message = "Invalid credential";
+				String message = "Invalid username or password!!!";
 				hs.setAttribute("message", message);
 				response.sendRedirect("user-login.jsp");
 			}

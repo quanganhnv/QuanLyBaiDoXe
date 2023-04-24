@@ -37,6 +37,8 @@ public class AdminLogin extends HttpServlet {
 				hs.setAttribute("uname", uname);
 				response.sendRedirect("dashboard.jsp?_tokens='" + tokens + "'");
 			} else {
+				String message = "Invalid username or password!!!";
+				hs.setAttribute("message", message);
 				response.sendRedirect("admin-login.jsp");
 			}
 		} catch (Exception e) {

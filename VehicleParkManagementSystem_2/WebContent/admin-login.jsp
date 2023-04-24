@@ -42,7 +42,20 @@
 				</div>
 				<div class="login-form">
 					<form action="AdminLogin" method="post">
-						<p style="font-size: 16px; color: red" align="center"></p>
+						<p style="font-size: 16px; color: red" align="center">
+						<%
+							String message = (String) session.getAttribute("message");
+							if (message != null) {
+								session.removeAttribute("message");
+						%>
+					
+					<h6>
+						<center>Invalid username or password!!!</center>
+					</h6>
+					<%
+						}
+					%>
+						</p>
 						<div class="form-group">
 							<label>Tên đăng nhập</label> <input class="form-control" type="text"
 								placeholder="Tên đăng nhập" required="true" name="username">
