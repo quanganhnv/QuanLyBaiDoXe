@@ -34,7 +34,7 @@
 			<div class="login-content">
 				<div class="login-logo">
 					<a href="index.jsp">
-						<h4 style="color: #FFFFFF">Vehicle Parking Management System</h4>
+						<h4 style="color: #FFFFFF">Hệ thống quản lý bãi đỗ xe</h4>
 					</a>
 				</div>
 				<div class="login-form">
@@ -46,7 +46,7 @@
 						%>
 					
 					<h6>
-						<center>User register successfully, Please login.</center>
+						<center>Đăng ký thành công, xin vui lòng đăng nhập</center>
 					</h6>
 					<%
 						}
@@ -54,38 +54,37 @@
 					</p>
 					<form action="UserRegister" method="post">
 						<div class="form-group">
-							<label>Name</label> <input class="form-control" type="text"
-								placeholder="Full Name" required="true" name="fullname">
+							<label>Tên</label> <input class="form-control" type="text"
+								placeholder="Tên" required="true" name="fullname">
 						</div>
 						<div class="form-group">
-							<label>Mobile No</label> <input class="form-control" type="text"
-								placeholder="Mobile No" required="true" name="mobile">
+							<label>Số điện thoại</label> <input class="form-control" type="text"
+								placeholder="Số điện thoại" required="true" name="mobile">
 						</div>
 						<div class="form-group">
-							<label>Email Id</label> <input class="form-control" type="text"
-								placeholder="Email Id" required="true" name="email">
+							<label>Điện thoại</label> <input class="form-control" type="text"
+								placeholder="Điện thoại" required="true" name="email">
 						</div>
 						<div class="form-group">
-							<label>Address</label>
-							<textarea class="form-control" placeholder="Address"
+							<label>Địa chỉ</label>
+							<textarea class="form-control" placeholder="Địa chỉ"
 								required="true" name="address"></textarea>
 						</div>
 						<div class="form-group">
-							<label>User Name</label> <input class="form-control" type="text"
-								placeholder="Username" required="true" name="username">
+							<label>Tên đăng nhập</label> <input class="form-control" type="text"
+								placeholder="Tên đăng nhập" required="true" name="username">
 						</div>
 						<div class="form-group">
-							<label>Password</label> <input type="password"
-								class="form-control" name="password" placeholder="Password"
+							<label>Mật khẩu</label> <input type="password"
+								class="form-control" name="password" placeholder="Mật khẩu"
 								required="true">
 						</div>
 						<div>
-							<label class="pull-left"><a href="index.jsp">Home
-									Page</a></label> <label class="pull-right"><a href="user-login.jsp">Sign
-									In </a></label>
+							<label class="pull-left"><a href="index.jsp">Trang chủ
+									Page</a></label> <label class="pull-right"><a href="user-login.jsp">Đăng nhập</a></label>
 						</div>
 						<button type="submit" name="login"
-							class="btn btn-warning btn-flat m-b-30 m-t-30">Sign Up</button>
+							class="btn btn-warning btn-flat m-b-30 m-t-30">Đăng ký</button>
 					</form>
 				</div>
 			</div>

@@ -59,29 +59,29 @@
 	<div id="addPopup">
 		<form action="AdminAction" method="post">
 						<div class="form-group">
-							<label>Name</label> <input class="form-control" type="text"
-								placeholder="Full Name" required="true" name="fullname">
+							<label>Họ và Tên</label> <input class="form-control" type="text"
+								placeholder="" required="true" name="fullname">
 						</div>
 						<div class="form-group">
-							<label>Mobile No</label> <input class="form-control" type="text"
-								placeholder="Mobile No" required="true" name="mobile">
+							<label>Số điện thoại</label> <input class="form-control" type="text"
+								placeholder="" required="true" name="mobile">
 						</div>
 						<div class="form-group">
-							<label>Email Id</label> <input class="form-control" type="text"
-								placeholder="Email Id" required="true" name="email">
+							<label>Email</label> <input class="form-control" type="text"
+								placeholder="" required="true" name="email">
 						</div>
 						<div class="form-group">
-							<label>Address</label>
-							<textarea class="form-control" placeholder="Address"
+							<label>Địa chỉ</label>
+							<textarea class="form-control" placeholder="Hà Nội"
 								required="true" name="address"></textarea>
 						</div>
 						<div class="form-group">
-							<label>User Name</label> <input class="form-control" type="text"
-								placeholder="Username" required="true" name="username">
+							<label>Tên đăng nhập</label> <input class="form-control" type="text"
+								placeholder="" required="true" name="username">
 						</div>
 						<div class="form-group">
-							<label>Password</label> <input type="password"
-								class="form-control" name="password" placeholder="Password"
+							<label>Mật khẩu</label> <input type="password"
+								class="form-control" name="password" placeholder=""
 								required="true">
 						</div>
 						<button type="submit" id="typeAdd" style="display: none;"
@@ -96,8 +96,8 @@
 			<div class="row m-0">
 				<div class="col-sm-4">
 					<div class="page-header float-left">
-						<div class="page-title" id="testEvent">
-							<h1>Dashboard</h1>
+						<div class="page-title">
+							<h1>Trang chủ</h1>
 						</div>
 					</div>
 				</div>
@@ -105,8 +105,8 @@
 					<div class="page-header float-right">
 						<div class="page-title">
 							<ol class="breadcrumb text-right">
-								<li><a href="dashboard.jsp">Dashboard</a></li>
-								<li class="active">User Membership</li>
+								<li><a href="dashboard.jsp">Trang chủ</a></li>
+								<li class="active">Thành viên</li>
 							</ol>
 						</div>
 					</div>
@@ -124,19 +124,17 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong class="card-title">Users Membership</strong>
+							<strong class="card-title">Thành viên</strong>
 						</div>
 						<div class="card-body">
 							<table class="table">
 								<thead>
 									<tr>
-										<th>S.NO</th>
-										<th>Full Name</th>
-										<th>Mobile</th>
+										<th>STT</th>
+										<th>Tên</th>
+										<th>Số điện thoại</th>
 										<th>Email</th>
-										<th>Address</th>
-										<th></th>
-										<th></th>
+										<th>Địa chỉ</th>
 									</tr>
 								</thead>
 								<%
