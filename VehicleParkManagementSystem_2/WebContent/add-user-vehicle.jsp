@@ -77,7 +77,7 @@
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong>Thêm </strong> phương tiện
+							<strong>Thêm phương tiện </strong> 
 						</div>
 							<p>
 								<%
@@ -127,11 +127,11 @@
 
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="text-input" class=" form-control-label">Số đăng ký</label>
+										<label for="text-input" class=" form-control-label">Biển số xe</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input type="text" id="vehreno" name="vehreno"
-											class="form-control" placeholder="Số đăng ký"
+											class="form-control" placeholder="Biển số xe"
 											required="true">
 									</div>
 								</div>

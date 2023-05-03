@@ -105,7 +105,7 @@
 								</div>
 								<div class="row form-group">
 									<div class="col col-md-3">
-										<label for="email-input" class=" form-control-label">Số điện tho</label>
+										<label for="email-input" class=" form-control-label">Số điện thoại</label>
 									</div>
 									<div class="col-12 col-md-9">
 										<input class=" form-control" id="username" name="username"

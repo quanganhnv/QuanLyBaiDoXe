@@ -36,8 +36,11 @@
 					<ul class="sub-menu children dropdown-menu">
 						<li><i class="menu-icon fa fa-th"></i><a
 							href="bwdates-report-ds.jsp">Báo cáo theo khoảng thời gian</a></li>
-
-					</ul></li>
+						<li><i class="menu-icon fa fa-th"></i><a
+							href="chart.jsp">Báo cáo theo loại xe</a></li>
+					</ul>
+					
+					</li>
 				<li><a href="search-vehicle.jsp"> <i
 						class="menu-icon ti-search"></i>Tìm kiếm phương tiện
 				</a></li>

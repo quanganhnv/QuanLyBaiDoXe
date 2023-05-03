@@ -77,9 +77,9 @@
 									<tr>
 									<tr>
 										<th>STT</th>
-										<th>Số bãi đỗ xe</th>
+										<th>Mã vé xe</th>
 										<th>Tên chủ xe</th>
-										<th>Số đăng ký xe</th>
+										<th>Biển số xe</th>
 										<th>Hành động</th>
 									</tr>
 									</tr>

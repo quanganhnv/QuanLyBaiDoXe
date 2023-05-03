@@ -1,9 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+
 <!doctype html>
 <html class="no-js" lang="">
 <head>
 
 <title>Các loại báo cáo</title>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 
 <link rel="apple-touch-icon" href="https://i.imgur.com/QRAUqs9.png">
@@ -103,6 +105,8 @@
 										name="submit">Tìm</button>
 								</p>
 							</form>
+							
+													
 						</div>
 
 					</div>
