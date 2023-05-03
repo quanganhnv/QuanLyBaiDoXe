@@ -58,6 +58,11 @@ public class ViewVehicleIncome extends HttpServlet {
 			e.printStackTrace();
 			System.out.println("Loi cau truy van doanh thu");
 		}
+//		for (String name: map.keySet()) {
+//		    String key = name.toString();
+//		    String value = map.get(name).toString();
+//		    System.out.println(key + " " + value);
+//		}
 		request.setAttribute("incomeMap", map);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/chart.jsp");
         requestDispatcher.forward(request, response);

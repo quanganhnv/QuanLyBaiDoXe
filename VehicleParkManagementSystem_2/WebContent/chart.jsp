@@ -12,6 +12,28 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
     // Load the Visualization API and the piechart package.
+    <%
+		Map<String,Float> map = new HashMap<>();
+		Connection connection;
+		try {
+			connection = DatabaseConnection.getConnection();
+			Statement stmt = connection.createStatement();
+			ResultSet rs=	stmt.executeQuery("SELECT VehicleCategory, SUM(parkingcharge)\r\n"
+					+ "FROM vpmsdb.tblvehicle \r\n"
+					+ "GROUP BY VehicleCategory;");
+			while(rs.next())
+			{
+				String vehicle = rs.getString(1);
+				String sum = rs.getString(2);
+				float sum_int = Float.parseFloat(sum);
+				map.put(vehicle, sum_int);
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("Loi cau truy van doanh thu");
+	}
+	%>
     google.charts.load('current', {'packages':['corechart']});
     
     // Set a callback to run when the Google Visualization API is loaded.
@@ -31,15 +53,18 @@
                     </c:forEach>
                     ]);*/
         var data = google.visualization.arrayToDataTable([
-              ['Loại xe', 'Doanh Thu'],
-              <c:forEach items="${map}" var="entry">
-                  [ '${entry.key}', ${entry.value} ],
-              </c:forEach>
+        	['Loại xe', 'Doanh thu'],
+        	<% if(map.size()!=0){
+    			for(Map.Entry<String,Float> entry : map.entrySet()){
+    		%>	          
+    		['<%=entry.getKey()%>',     <%out.print(entry.getValue());%>],
+              <%}
+        	}%>
         ]);
                     
         // Set chart options
         var options = {
-            'title' : 'Area-wise Top Seven Countries in the World', //title which will be shown right above the Google Pie Chart
+            'title' : 'Thống kê doanh thu theo loại xe', //title which will be shown right above the Google Pie Chart
             is3D : true, //render Google Pie Chart as 3D
             pieSliceText: 'label', //on mouse hover show label or name of the Country
             tooltip :  {showColorCode: true}, // whether to display color code for a Country on mouse hover
@@ -79,32 +104,34 @@
 	rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<%
-		Map<String,String> map = new HashMap<>();
-		Connection connection;
-		try {
-			connection = DatabaseConnection.getConnection();
-			Statement stmt = connection.createStatement();
-			ResultSet rs=	stmt.executeQuery("SELECT VehicleCategory, SUM(parkingcharge)\r\n"
-					+ "FROM vpmsdb.tblvehicle \r\n"
-					+ "GROUP BY VehicleCategory;");
-			while(rs.next())
-			{
-				String vehicle = rs.getString(1);
-				String sum = rs.getString(2);
-				map.put(vehicle, sum);
-			}
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			System.out.println("Loi cau truy van doanh thu");
-	}
-	%>
+	
 	<jsp:include page="includes/sidebar.jsp"></jsp:include>
 
 	<jsp:include page="includes/header.jsp"></jsp:include>
     <div style="width: 600px;">
         <div id="chart_div"></div>
     </div>
+    
+    
+    <div class="clearfix"></div>
+
+	<jsp:include page="includes/footer.jsp"></jsp:include>
+
+	</div>
+	<!-- /#right-panel -->
+
+	<!-- Right Panel -->
+
+	<!-- Scripts -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+	<script src="assets/js/main.js"></script>
+    
 </body>
 </html>
