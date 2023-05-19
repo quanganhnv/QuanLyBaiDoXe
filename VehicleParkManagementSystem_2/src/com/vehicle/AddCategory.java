@@ -22,6 +22,7 @@ public class AddCategory extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
 		String catename = request.getParameter("catename");
 		try {
 			HttpSession hs=request.getSession();

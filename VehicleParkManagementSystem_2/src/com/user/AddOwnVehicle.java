@@ -25,6 +25,7 @@ public class AddOwnVehicle extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		Random rand = new Random();
+		request.setCharacterEncoding("UTF-8");
 		int ParkingNumber = rand.nextInt(9000000) + 1000000;
 		HttpSession hs = request.getSession();
 		System.out.println("ParkingNumber        " + ParkingNumber);
@@ -33,6 +34,7 @@ public class AddOwnVehicle extends HttpServlet {
 		String vehreno = request.getParameter("vehreno");
 		String ownername = request.getParameter("ownername");
 		String ownercontno = request.getParameter("ownercontno");
+		request.setCharacterEncoding("UTF-8");
 		int parking_seat=0;
 		int addVehicle = 0;
 		String status = "";

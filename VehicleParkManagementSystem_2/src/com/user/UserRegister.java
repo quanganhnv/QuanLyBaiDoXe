@@ -20,6 +20,7 @@ import com.connection.DatabaseConnection;
 public class UserRegister extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
 		String fullname = request.getParameter("fullname");
 		String mobile = request.getParameter("mobile");
 		String email = request.getParameter("email");

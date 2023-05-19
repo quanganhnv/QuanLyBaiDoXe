@@ -23,6 +23,7 @@ public class ViewIncomingVehicleDetails extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
 		String category = request.getParameter("category");
 		String intime = request.getParameter("intime");
 		String remark = request.getParameter("remark");

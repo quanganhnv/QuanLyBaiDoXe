@@ -22,6 +22,7 @@ import com.connection.DatabaseConnection;
 public class UserLogin extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
 		String uname = request.getParameter("username");
 		String pass = request.getParameter("password");
 		try {

@@ -24,6 +24,7 @@ public class AddVehicle extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
 		Random rand = new Random();
 		int ParkingNumber = rand.nextInt(9000000) + 1000000;
 		HttpSession hs = request.getSession();

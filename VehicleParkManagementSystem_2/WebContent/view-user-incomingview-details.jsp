@@ -157,7 +157,7 @@
 						%>
 						
 							<tr>
-								<th>Nhận xet :</th>
+								<th>Nhận xét :</th>
 								<td><textarea name="remark" placeholder="" rows="12"
 										cols="14" class="form-control" required="true"></textarea></td>
 							</tr>

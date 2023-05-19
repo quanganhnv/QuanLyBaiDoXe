@@ -2,8 +2,9 @@
 <%@ page import="com.connection.*"%>
 <%@ page import="java.sql.*"%>
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Thêm phương tiện</title>
 <link rel="apple-touch-icon" href="https://i.imgur.com/QRAUqs9.png">
 <link rel="shortcut icon" href="https://i.imgur.com/QRAUqs9.png">
