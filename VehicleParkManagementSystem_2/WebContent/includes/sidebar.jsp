@@ -38,6 +38,10 @@
 							href="bwdates-report-ds.jsp">Báo cáo theo khoảng thời gian</a></li>
 						<li><i class="menu-icon fa fa-th"></i><a
 							href="chart.jsp">Báo cáo theo loại xe</a></li>
+						<li><i class="menu-icon fa fa-th"></i><a
+							href="chart-customer.jsp">Báo cáo theo khách hàng</a></li>
+						<li><i class="menu-icon fa fa-th"></i><a
+							href="kpi.jsp">KPI Dashboard</a></li>
 					</ul>
 					
 					</li>
